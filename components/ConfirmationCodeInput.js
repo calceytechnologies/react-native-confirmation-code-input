@@ -241,12 +241,12 @@ export default class ConfirmationCodeInput extends Component {
     }
 
     onChangeText(newCodeArr);
-    this.setState(
-      prevState => ({
+    this.setState(prevState => {
+      return {
         codeArr: newCodeArr,
         currentIndex: prevState.currentIndex + 1
-      })}
-    );
+      };
+    });
   }
 
   render() {
