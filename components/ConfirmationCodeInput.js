@@ -1,7 +1,8 @@
 import _ from "lodash";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
-import { StyleSheet, TextInput, View, ViewPropTypes } from "react-native";
+import { StyleSheet, TextInput, View } from "react-native";
+import {ViewPropTypes} from 'deprecated-react-native-prop-types'
 
 // if ViewPropTypes is not defined fall back to View.propType (to support RN < 0.44)
 const viewPropTypes = ViewPropTypes || View.propTypes;
